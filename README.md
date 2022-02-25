@@ -33,7 +33,7 @@ Check Nuget for BouncyCastle, you'll need to add BouncyCastle to your project fo
 
 # Usage
 
-Check the `examples/` folder for more examples, but the basic usage is this:
+Check the `examples/` subfolder of both languages (eg. `php/examples/`) for more examples, but the basic usage is this:
 
 ## PHP
 ```
