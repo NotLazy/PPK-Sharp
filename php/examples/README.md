@@ -1,1 +1,1 @@
-Feel free to PR more examples to add to this directory!
+Feel free to pull request more examples to add to this directory!
