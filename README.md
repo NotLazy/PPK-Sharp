@@ -14,7 +14,7 @@ You may be able to use PHP 4.2 or PHP 5, but do not submit an issue if you aren'
 
 Check Nuget for BouncyCastle, you'll need to add BouncyCastle to your project for this to work in C#
 
-# Depenancies
+# Dependencies
 
 - [PHP] OpenSSL 1.1.1 or higher
 - [C#] BouncyCastle 1.8.10 or higher for `.Net Core 3.1` or equivilent BouncyCastle Package
@@ -55,16 +55,14 @@ namespace ConsoleTest
 {
     class Program
     {
-        private static PPK pem;
-        private static PPK ppk;
         static void Main(string[] args)
         {
             // you can provide your key by fetching it from a web server, or by reading it from a file.
             string PrivateKey = "... your public or private key here...";
             string PublicKey = "... your public or private key here...";
 
-            ppkPublic = new PEM(PublicKey); // key should be in PEM format
-            ppkPrivate = new PPK(PrivateKey); // key should be in PEM format
+            PPK ppkPublic = new PPK(PublicKey); // key should be in PEM format
+            PPK ppkPrivate = new PPK(PrivateKey); // key should be in PEM format
             
             string encrypted = ppkPublic.Encrypt("Hello World");
 
